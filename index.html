@@ -3,16 +3,283 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="/src/assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css">
+    <link rel="stylesheet" href="/dist/assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/dist/assets/css/styles.css">
     <title>Centro Medico Integral</title>
 </head>
 <body>
-        <div class="m-auto border border-amber-600 text-center ">
-            <h1 class="text-blue-200 font-extrabold uppercase text-4xl  border p-4">Buen día</h1>
+    <!-- header -->
+    <header class="py-8 lg:pt-6 lg:pb-14">
+        <div class="container mx-auto lg:relative flex flex-col lg:flex-row lg:justify-between gap-y-4 lg:gap-y-0">
+            <!-- logo -->
+             <div class="flex justify-center lg:justify-normal">
+                <a href="#">
+                    <img src="/dist/assets/img/header/logo.svg" alt="logo centro Medico">
+                </a>
+             </div>
+             <!-- location -->
+             <div class="flex justify-center items-center gap-x-2 lg:justify-normal">
+                <i class="ri-map-pin-2-fill text-2xl text-accent"></i>
+                <div class="text-secondary">123, Arling, Miola, NY</div>
+             </div>
+             <!-- phone -->
+             <div class="flex justify-center items-center gap-x-2 lg:justify-normal">
+                <i class="ri-phone-fill text-2xl text-accent"></i>
+                <div class="text-secondary">(+487) 384 9452</div>
+             </div>
+             <button class="btn btn-sm btn-outline w-[240px] lg:w-auto mx-auto lg:mx-0">Book now</button>
+       
+        <!-- mobile nav -->
+        <nav class="mnav bg-white fixed w-[300px] top-0 h-screen -left-[300px] shadow-2xl lg:hidden transition-all duration-300 z-20">
+            <!-- nav trigger btn -->
+            <div class="mnav__close-btn bg-primary w-8 h-8 relative -right-full top-8 flex justify-center 
+                 items-center rounded-tr-lg rounded-br-lg cursor-pointer transition-all">
+                <i class="mnav__close-btn-icon ri-arrow-right-s-line text-2xl text-secondary"></i>
+            </div>
+            <!-- logo, list, form -->
+             <div class="px-12 flex flex-col gap-y-12 h-full">
+                <!-- logo -->
+                 <a href="" class=""><img src="/dist/assets/img/header/logo.svg" alt=""></a>
+                 <!-- list -->
+                 <ul> 
+                    <li> <a href="#home" class="text-secondary hover:text-accent transition-all duration-300">
+                            Home
+                         </a>
+                    </li>
+                    <li>
+                        <a href="#doctors" class="text-secondary hover:text-accent transition-all duration-300">
+                            Doctors
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#department" class="text-secondary hover:text-accent transition-all duration-300">
+                            Department
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#service" class="text-secondary hover:text-accent transition-all duration-300">
+                            Services
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#blog" class="text-secondary hover:text-accent transition-all duration-300">
+                            Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-secondary hover:text-accent transition-all duration-300">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+                <!-- form -->
+                <form action="" class="relative flex gap-x-" 10px="">
+                        <label for="mnav-search-input">
+                            <i class="ri-search-line text-2xl text-accent"></i> 
+                        </label>
+                        <input type="text" id="mnav-search-input" placeholder="Search..."
+                        class="outline-none w-[160px] border-b-2 focus:border-b-2 focus:border-accent placeholder:italic">
+                </form>
+               </div>
+        </nav>
+
+        <!-- desktop nav -->
+         <nav class="bg-white absolute w-full hidden left-0 -bottom-[86px] shadow-custom1 h-16 rounded-[10px]  
+              lg:items-center lg:justify-between lg:px-[50px] lg:flex">
+                 <!-- list -->
+                 <ul class="flex gap-x-5"> 
+                    <li> <a href="#home" class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">
+                            Home
+                         </a>
+                    </li>
+                    <li>
+                        <a href="#doctors" class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">
+                            Doctors
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#department" class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">
+                            Department
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#service" class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">
+                            Services
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#blog" class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">
+                            Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-secondary hover:text-accent transition-all duration-300">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+                <!-- form -->
+                <form class="relative flex gap-x-[10px]">
+                        <label for="search-input" 
+                               class="flex justify-center items-center group"
+                        >
+                            <i class="ri-search-line text-2xl text-accent"></i> 
+                        </label>
+                        <input type="text" id="search-input" placeholder="Search..."
+                        class="outline-none w-[100px] border-b-2 focus:w-[180px] focus:border-b-2 focus:border-accent placeholder:italic placeholder:text-base transition-all duration-150">
+                </form>
+         </nav>
         </div>
-        
+    </header>
+<!-- 55:57 hero -->
+    <section class="hero bg-grey py-12 xl:pt-12 xl:pb-0 overflow-hidden">
+        <div class="container mx-auto h-full">
+            <!-- text & img -->
+            <div class="flex flex-col xl:flex-row items-center justify-between h-full">
+
+                <!-- text -->
+                <div class="hero__text xl:w-[48%] text-center xl:text-left">
+                    <!-- badge -->
+                    <div class="flex items-center bg-white py-[10px] px-[20px] w-max gap-x-2 mb-[26px] rounded-full mx-auto xl:mx-0">
+                        <!-- badge remix icon  -->
+                         <i class="ri-heart-pulse-line text-2xl text-accent"></i>
+                         <div class="uppercase text-base font-medium text-[#9ab4b7] tracking-[2.24px]">Live your life
+                         </div>
+                    </div>
+                <!-- title -->
+                <h1 class="h1 mb-6">We care about your health</h1>
+                <!-- desc -->
+                <p class="mb-[42px] md:max-w-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non ducimus ipsum dicta vel atque accusamus officiis veniam tenetur, officia dolor nam quibusdam</p>
+                <!-- btn -->
+                <button class="btn btn-lg btn-accent m-auto md:mx-0">Contact us</button>
+            </div>  
+
+             <!-- imagen -->
+            <div class="hero__img hidden xl:flex max-w-[814px] self-end">
+                <img src="/dist/assets/img/hero/img.png" alt="">
+            </div>
 
 
+        </div> 
+             
+    </section>
+<!-- end hero -->
+<!-- stars estadísticas  -->
+ <section class="stats section">
+    <div class="container mx-auto">
+        <!-- wrapper -->
+         <div class="flex flex-col gap-y-20 md:flex-row">
+            <!-- item -->
+             <div class="stats__item flex-1 xl:border-r flex flex-col items-center justify-center space-y-3">
+                <div class="text-5xl xl:text-[64px] font-semibold text-accent-tertiary">
+                    +5120
+                </div>
+                <p class="text-xl">Happy Patients</p>
+             </div>
+             <!-- item -->
+             <div class="stats__item flex-1 xl:border-r flex flex-col items-center justify-center space-y-3">
+                <div class="text-5xl xl:text-[64px] font-semibold text-accent-tertiary">
+                    26
+                </div>
+                <p class="text-xl">Total Branches</p>
+             </div>
+             <!-- item -->
+             <div class="stats__item flex-1 xl:border-r flex flex-col items-center justify-center space-y-3">
+                <div class="text-5xl xl:text-[64px] font-semibold text-accent-tertiary">
+                    +53
+                </div>
+                <p class="text-xl">Senor Doctors</p>
+             </div>
+             <!-- item -->
+             <div class="stats__item flex-1 flex flex-col items-center space-y-3">
+                <div class="text-5xl xl:text-[64px] font-semibold text-accent-tertiary">
+                    +10
+                </div>
+                <p class="text-xl">Years Experience</p>
+             </div>
+         </div>
+    </div>
+ </section>
+<!-- end stars -->
+<!-- services -->
+ <section class="services">
+    <!-- bg -->
+     <div class="bgi-servicio bg-cover bg-no-repeat max-w-[1466px] mx-4 xl:mx-auto rounded-[20px] xl:pt-[70px] px-6 relative h-[368px] flex items-center xl:items-start -z-10">
+        <div class="container mx-auto">
+            <!-- text -->
+             <div class="services__top flex flex-col text-center gap-y-8 md:flex-row md:text-start md:gap-x-8 md:gap-y-0 text-white xl:mb-[60px]">
+                <h2 class="h2 text-white text-center flex-1 mb-4 xl:mb-0 xl:text-left">Our Beast Service For Your Solution</h2>
+                <p class="text-xl flex-1 text-center xl:text-left max-w-2xl xl:max-w-none">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, fuga fugit? Eligendi consequuntur eveniet odit distinctio, velit, animi </p>
+             </div>
+        </div>
+     </div>
+     <!-- grid container -->
+      <div class="container mx-auto mt-8 xl:-mt-[144px]">
+        <!-- grid -->
+         <div class="grid xl:grid-cols-4 gap-5 px-8 xl:px-0">
+            <!-- grid item -->
+            <div class="services__item bg-white p-[30px] rounded-[10px] shadow-custom2 min-h-[288px] flex flex-col items-center text-center">
+                <!-- grid item icon -->
+                 <div class="mb-[15px]">
+                    <img src="/dist/assets/icons/services/icon-1.svg" alt="">
+                </div>
+                <!-- grid item title -->
+                 <h3 class="h3 mb-[10px]">General Practitioners</h3>
+                 <!-- grid item description -->
+                <p class="font-light leading-normal max-w-[300px]:">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <!-- grid item -->
+            <div class="services__item bg-white p-[30px] rounded-[10px] shadow-custom2 min-h-[288px] flex flex-col items-center text-center">
+                <!-- grid item icon -->
+                 <div class="mb-[15px]">
+                    <img src="/dist/assets/icons/services/icon-2.svg" alt="">
+                </div>
+                <!-- grid item title -->
+                 <h3 class="h3 mb-[10px]">General Practitioners</h3>
+                 <!-- grid item description -->
+                <p class="font-light leading-normal max-w-[300px]:">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <!-- grid item -->
+            <div class="services__item bg-white p-[30px] rounded-[10px] shadow-custom2 min-h-[288px] flex flex-col items-center text-center">
+                <!-- grid item icon -->
+                 <div class="mb-[15px]">
+                    <img src="/dist/assets/icons/services/icon-3.svg" alt="">
+                </div>
+                <!-- grid item title -->
+                 <h3 class="h3 mb-[10px]">General Practitioners</h3>
+                 <!-- grid item description -->
+                <p class="font-light leading-normal max-w-[300px]:">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <!-- grid item -->
+            <div class="services__item bg-white p-[30px] rounded-[10px] shadow-custom2 min-h-[288px] flex flex-col items-center text-center">
+                <!-- grid item icon -->
+                 <div class="mb-[15px]">
+                    <img src="/dist/assets/icons/services/icon-4.svg" alt="">
+                </div>
+                <!-- grid item title -->
+                 <h3 class="h3 mb-[10px]">General Practitioners</h3>
+                 <!-- grid item description -->
+                <p class="font-light leading-normal max-w-[300px]:">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+         </div>
+      </div>
+ </section>
+<!-- end services -->
+
+<!-- temp div  -->
+ <div class="h-[4000px]"></div>    
+
+
+
+
+
+    <!--scripts  -->
+    <!-- swiper -->
+     <script src="/dist/assets/js/swiper-bundle.min.js"></script>
+     <!-- scroll reveal -->
+     <script src="/dist/assets/js/scrollreveal.min.js"></script>   
+     <!-- main -->
+     <script src="/dist/assets/js/main.js"></script>
 </body>
 </html>

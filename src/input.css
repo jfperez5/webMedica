@@ -1,0 +1,69 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "tailwindcss";
+  /* --spacing:15px;      */
+  
+@theme{
+    --breakpoint-xs:40rem;
+    --breakpoint-md:48rem;
+    --breakpoint-lg:60rem;
+    --breakpoint-xl:83.125rem;
+   
+    --font-poppins:'Poppins';
+ 
+    --color-primary:#242a2b;
+    --color-secondary:#808080;
+    --color-accent:#1cbccf;
+    --color-accent-secondary:#18abbc;
+    --color-accent-tertiary:#90c6cd;
+    --color-grey:#e8f0f1;
+    --color-grey-claro:#dbdfdf;
+    --shadow-custom1: 0px 2px 40px 0px rgba(8,70,78,0.08);
+    --shadow-custom2: 0px 0px 30px 0px rgba(8,73,81,0.06);
+}   
+
+@layer base{
+    body{@apply text-secondary font-poppins text-[17px] leading-8;}
+    h1,h2,h3,h4,h5,h6{@apply text-primary leading-[120%];}
+   
+}
+
+@layer components{
+    .btn{ @apply rounded-full uppercase tracking-[1.02px] flex items-center justify-center transition-all; }
+    .btn-sm { @apply h-14 px-10; }
+    .btn-lg { @apply h-16 px-[50px]; }
+    .btn-accent { @apply  bg-accent text-white hover:bg-accent-secondary; }
+    .btn-white { @apply  bg-white text-secondary hover:bg-white/90; }
+    .btn-outline { @apply bg-transparent border-2 border-accent text-secondary hover:bg-accent hover:border-transparent hover:text-white; }
+}
+
+@layer utilities{
+    .bgi-servicio { @apply bg-[url(/dist/assets/img/services/bg.svg)]; }
+    .bgi-testimonials { @apply bg-[url(/dist/assets/img/testimonials/bg.svg)]; }
+    .bgi-departments { @apply bg-[url(/dist/assets/img/departments/bg.svg)]; }
+    .bgi-quoteLeft { @apply bg-[url(/dist/assets/icons/testimonials/quote-left.svg)] bg-no-repeat; }
+    .bgi-quoteRight { @apply bg-[url(/dist/assets/icons/testimonials/quote-rigth.svg)] bg-no-repeat;}
+
+    .h1{@apply text-[36px] xl:text-[64px] font-semibold;}
+    .h2{@apply text-[25px] md:text-[30px] xl:text-[38px] font-semibold;}
+    .h3{@apply text-[20px] xl:text-[26px] font-semibold;}
+    .h4{@apply text-[19px] xl:text-[25px] font-semibold capitalize;}
+    .input, .select{ @apply w-full rounded-[10px] h-[66px] outline-none border border-gray-claro text-secondary font-light placeholder:font-light placeholder:text-secondary px-2 hover:border hover:border-accent; }
+    
+    .section{@apply py-12 xl:py-[150px];}
+    
+    /* swiper bullets */
+    .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+        @apply bg-accent;
+    }
+
+    /* faq */
+    .faq__item.open.faq__answer{ @apply h-full; }
+
+
+
+
+
+}
