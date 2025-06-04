@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--************************ REMIXICON CDN ********************************  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <!--************************ CSS STYLES  ********************************  -->
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <!-- *********************** FAVICON ************************************* -->
+    <link rel="icon" href="/dist/assets/favicon.jpg">
+
+    <title>Subscribe to @Soodacode for more!</title>
+</head>
+<body>
+    <section>
+        <h2>leading companies <br> have trusted us</h2>
+        <div class="container">
+            <div class="card">
+                <div class="card_inner">
+                    <div class="box">
+                        <div class="img_box">
+                            <img src="assets/card_1.avif">
+                        </div>
+                    </div>
+                    <div class="card_icon">
+                        <a href="" class="icon_box">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>trust &amp; co.</h3>
+                    <p>Fill out the form and the algorithm will offer the right team of experts</p>
+                </div>
+                <ul>
+                    <li class="branding">Branding</li>
+                    <li class="packagin">Packagin</li>
+                </ul>
+            </div>
+             <div class="card">
+                <div class="card_inner">
+                    <div class="box">
+                        <div class="img_box">
+                            <img src="assets/card_2.avif" >
+                        </div>
+                    </div>
+                    <div class="card_icon">
+                        <a href="#" class="icon_box">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Tonic</h3>
+                    <p>Fill out the form and the algorithm will offer the right team of experts</p>
+                </div>
+                <ul>
+                    <li class="branding">Branding</li>
+                    <li class="packagin">Marketing</li>
+                </ul>
+            </div>
+             <div class="card">
+                <div class="card_inner">
+                    <div class="box">
+                        <div class="img_box">
+                            <img src="assets/card_3.avif">
+                        </div>
+                    </div>
+                    <div class="card_icon">
+                        <a href="#" class="icon_box">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Show Gel</h3>
+                    <p>Fill out the form and the algorithm will offer the right tem of experts</p>
+                </div>
+                <ul>
+                    <li class="branding">Branding</li>
+                    <li class="packagin">Packagin</li>
+                    <li class="marketing">Marketing</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+<!-- *************************** JAVASCRIPT ************************ -->
+ <script src="main.js"></script>
+</body>
+</html>
+
+<style>
+    /*************************GOOGLE FONTS ********************* */
+    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+    /* ******************** GENERAL STYLES ****************** */
+
+    :root{
+        --bg-color:#fff;
+        --badge-1:#d3b19a;
+        --badge-2:#70b3b1;
+        --badge-3:#d05fa2;
+        --black-color:#111;
+        --light-color:#fafafa;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        font-family: 'Lato', sans-serif;
+        height: 100%;
+        min-height: 100vh;
+        background: var(--bg-color);
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+
+    img {
+        width:100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    /* *********************** CUSTOM CSS ******************* */
+    h2 {
+        text-transform: uppercase;
+        font-size: 2rem;
+    }
+
+    a {
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(16rem,1fr));
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap:.5rem;
+        margin:10px 0;
+    }
+
+    li{
+        text-transform: uppercase;
+        font-size: 13px;
+        padding: 4px 10px;
+        border-radius: 8px;
+       
+    }
+    li.branding{
+          background-color: var(--badge-1);
+        }
+    li.packagin{
+          background-color: var(--badge-2);
+        }
+    li.marketing{
+          background-color: var(--badge-3);
+        }
+    
+
+        
+
+
+/*  R E S P O N S I V E  */
+@media (max-width:768px){
+    body {
+        padding: 1rem;
+    }
+
+    img{
+        width: auto;
+        height: auto;
+    }
+}
+
+</style>
