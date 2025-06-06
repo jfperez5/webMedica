@@ -206,17 +206,18 @@
  <section class="services">
     <!-- bg -->
      <div class="bgi-servicio bg-cover bg-no-repeat max-w-[1466px] mx-4 xl:mx-auto rounded-[20px] xl:pt-[70px] px-6 relative h-[368px] flex items-center xl:items-start -z-10">
+        
         <div class="container mx-auto">
             <!-- text -->
-             <div class="services__top flex flex-col text-center gap-y-8 md:flex-row md:text-start md:gap-x-8 md:gap-y-0 text-white xl:mb-[60px]">
+            <div class="services__top flex flex-col text-center gap-y-8 md:flex-row md:text-start md:gap-x-8 md:gap-y-0 text-white xl:mb-[60px]">
                 <h2 class="h2 text-white text-center flex-1 mb-4 xl:mb-0 xl:text-left">Our Beast Service For Your Solution</h2>
                 <p class="text-xl flex-1 text-center xl:text-left max-w-2xl xl:max-w-none">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, fuga fugit? Eligendi consequuntur eveniet odit distinctio, velit, animi </p>
-             </div>
+            </div>
         </div>
      </div>
      <!-- grid container -->
-      <div class="container mx-auto mt-8 xl:-mt-[144px]">
-        <!-- grid -->
+     <div class="container mx-auto mt-8 xl:-mt-[144px] max-w-[1370px]">
+                   <!-- grid -->
          <div class="grid xl:grid-cols-4 gap-5 px-8 xl:px-0">
             <!-- grid item -->
             <div class="services__item bg-white p-[30px] rounded-[10px] shadow-custom2 min-h-[288px] flex flex-col items-center text-center">
@@ -263,9 +264,107 @@
                 <p class="font-light leading-normal max-w-[300px]:">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
             </div>
          </div>
-      </div>
+     </div>
  </section>
 <!-- end services -->
+
+<!-- appointment -->
+ <section class="appointment section">
+    <div class="container mx-auto">
+        <!-- title -->
+        <h2 class="appointment__title h2 mb-5 xl:mb-[50px] text-center xl:text-left">Book Appointment or call:    <span class="text-accent-tertiary">(+487) 384 9452</span>
+        </h2> 
+        <!-- form -->
+        <form class="appointment__form flex flex-col gap-y-5 px-4 lg:px-0">
+            <!-- select wrapper -->
+            <div class="flex flex-col xl:flex-row gap-5">
+                <!-- select 1 -->
+                <div class="select relative flex items-center">
+                    <div class="absolute right-4">
+                        <i class="ri-arrow-down-s-line text-[26px] text-primary"></i>
+                    </div>
+                    <select class="appearance-none outline-none h-full w-full bg-transparent px-4">
+                        <option value="1">Select department</option>
+                        <option value="2">Department 1</option>
+                        <option value="3">Department 2</option>
+                        <option value="4">Department 3</option>
+                    </select>
+                </div>
+                <!-- select 2 -->
+                <div class="select relative flex items-center">
+                    <div class="absolute right-4">
+                        <i class="ri-arrow-down-s-line text-[26px] text-primary"></i>
+                    </div>
+                    <select class="appearance-none outline-none h-full w-full bg-transparent px-4">
+                        <option value="1">Select doctor</option>
+                        <option value="2">Dr. Jane Doe</option>
+                        <option value="3">Dr. Jhon Doe</option>
+                        <option value="4">Dr. Bob Smith</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="flex flex-col xl:flex-row gap-5">
+                <input type="text" class="input" placeholder="Full Name">
+                <input type="text" class="input" placeholder="Phone Number">
+            </div>
+
+            <div class="flex flex-col xl:flex-row gap-5">
+                <input type="date" class="input">
+                <input type="time" class="input">
+            </div>
+
+            <button class="btn btn-lg btn-accent self-center lg:self-start">Book an appointment</button>
+        </form>
+    </div>
+ </section>
+<!-- end appointment -->
+
+<!-- testimonials -->
+ <section class="testimonial bgi-testimonials bg-cover bg-right bg-no-repeat py-12 xl:min-h-[595px] xl:py-0">
+    <div class="testimonial__constainer container mx-auto">
+        <div>
+            <!-- img -->
+            <div class="hidden xl:flex">
+                <img src="/dist/assets/img/testimonials/img.png">
+            </div>
+            <!-- slider -->
+            <div class="max-w-[98%] xl:max-w-[710px]">
+                <!-- Slider main container -->
+                 <div class="swiper h-[400px]">
+                    <!-- Additional required wrapper -->
+                     <div class="swiper-wrapper">
+                        <!-- Slides 1-->
+                        <div class="swiper-slide">
+                            <div class="h-full flex flex-col justify-center items-start">
+                                <div class="max-w-[680px] mx-auto text-center xl:text-left">
+                                    <!-- message -->
+                                    <p class="font-light relative text-[22px] text-[#4c5354] leading-[190%] text-center xl:text-left 
+                                    before:bg-red-100 bgi-quoteRight   
+                                    "
+                                    >
+                                        <span class="mx-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe debitis sequi dolores repellendus eos vero quidem maxime rem. Lorem ipsum dolor sit.</span>
+                                    </p>
+                                    <!-- name -->
+                                    <div>James Rodriguez</div> 
+                                    <!-- job -->
+                                    <div>Customer</div> 
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slides 2-->
+                        <
+                        <!-- Slides 3-->
+                        
+                     </div>
+                     <!-- swiper pagination -->
+                      <div class="swiper-pagination"></div>
+                 </div>
+            </div> 
+        </div>
+    </div>
+ </section>
+<!-- end testimonials -->
 
 <!-- temp div  -->
  <div class="h-[4000px]"></div>    

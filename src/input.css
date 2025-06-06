@@ -49,7 +49,7 @@
     .h2{@apply text-[25px] md:text-[30px] xl:text-[38px] font-semibold;}
     .h3{@apply text-[20px] xl:text-[26px] font-semibold;}
     .h4{@apply text-[19px] xl:text-[25px] font-semibold capitalize;}
-    .input, .select{ @apply w-full rounded-[10px] h-[66px] outline-none border border-gray-claro text-secondary font-light placeholder:font-light placeholder:text-secondary px-2 hover:border hover:border-accent; }
+    .input, .select{ @apply w-full rounded-[10px] h-[66px] outline-none border border-grey-claro text-secondary font-light placeholder:font-light placeholder:text-secondary px-2 hover:border hover:border-accent; }
     
     .section{@apply py-12 xl:py-[150px];}
     
