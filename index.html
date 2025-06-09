@@ -323,7 +323,7 @@
 <!-- testimonials -->
  <section class="testimonial bgi-testimonials bg-cover bg-right bg-no-repeat py-12 xl:min-h-[595px] xl:py-0">
     <div class="testimonial__constainer container mx-auto">
-        <div>
+        <div class="flex flex-col md:flex-row items-center gap-x-14 ">
             <!-- img -->
             <div class="hidden xl:flex">
                 <img src="/dist/assets/img/testimonials/img.png">
@@ -339,24 +339,54 @@
                             <div class="h-full flex flex-col justify-center items-start">
                                 <div class="max-w-[680px] mx-auto text-center xl:text-left">
                                     <!-- message -->
-                                    <p class="font-light relative text-[22px] text-[#4c5354] leading-[190%] text-center xl:text-left 
-                                    before:bg-red-100 bgi-quoteRight   
-                                    "
-                                    >
-                                        <span class="mx-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe debitis sequi dolores repellendus eos vero quidem maxime rem. Lorem ipsum dolor sit.</span>
+                                    <p class="font-light relative text-[22px] text-[#4c5354] leading-[190%] text-center xl:text-left mb-7">
+                                       <span class="bgi-quoteLeft bg-contain inline-block bg-bottom top-0 w-10 h-10"></span>
+                                       <span class="mx-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe debitis sequi dolores repellendus eos vero quidem maxime rem. Lorem ipsum dolor sit.</span>
+                                       <span class="bgi-quoteRight bg-contain inline-block bg-bottom top-0 w-10 h-10"></span>
                                     </p>
                                     <!-- name -->
-                                    <div>James Rodriguez</div> 
+                                    <div class="text-[26px] text-[#4c5354] font-semibold">James Rodriguez</div> 
                                     <!-- job -->
-                                    <div>Customer</div> 
+                                    <div class="text-[#9ab4b7] font-medium uppercase tracking-[2.24px]">Customer</div> 
                                 </div>
                             </div>
                         </div>
                         <!-- Slides 2-->
-                        <
+                        <div class="swiper-slide">
+                            <div class="h-full flex flex-col justify-center items-start">
+                                    <div class="max-w-[680px] mx-auto text-center xl:text-left">
+                                        <!-- message -->
+                                        <p class="font-light relative text-[22px] text-[#4c5354] leading-[190%] text-center xl:text-left mb-7">
+                                        <span class="bgi-quoteLeft bg-contain inline-block bg-bottom top-0 w-10 h-10"></span>
+                                        <span class="mx-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe debitis sequi dolores repellendus eos vero quidem maxime rem. Lorem ipsum dolor sit.</span>
+                                        <span class="bgi-quoteRight bg-contain inline-block bg-bottom top-0 w-10 h-10"></span>
+                                        </p>
+                                        <!-- name -->
+                                        <div class="text-[26px] text-[#4c5354] font-semibold">Jonathan Ryh</div> 
+                                        <!-- job -->
+                                        <div class="text-[#9ab4b7] font-medium uppercase tracking-[2.24px]">Customer</div> 
+                                    </div>
+                            </div>
+                        </div>
                         <!-- Slides 3-->
-                        
+                        <div class="swiper-slide">
+                            <div class="h-full flex flex-col justify-center items-start">
+                                    <div class="max-w-[680px] mx-auto text-center xl:text-left">
+                                        <!-- message -->
+                                        <p class="font-light relative text-[22px] text-[#4c5354] leading-[190%] text-center xl:text-left mb-7">
+                                        <span class="bgi-quoteLeft bg-contain inline-block bg-bottom top-0 w-10 h-10"></span>
+                                        <span class="mx-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe debitis sequi dolores repellendus eos vero quidem maxime rem. Lorem ipsum dolor sit.</span>
+                                        <span class="bgi-quoteRight bg-contain inline-block bg-bottom top-0 w-10 h-10"></span>
+                                        </p>
+                                        <!-- name -->
+                                        <div class="text-[26px] text-[#4c5354] font-semibold">Rosa Shanina</div> 
+                                        <!-- job -->
+                                        <div class="text-[#9ab4b7] font-medium uppercase tracking-[2.24px]">Customer</div> 
+                                    </div>
+                            </div>
+                        </div> 
                      </div>
+                     <!-- 1:39:30 -->
                      <!-- swiper pagination -->
                       <div class="swiper-pagination"></div>
                  </div>
@@ -365,6 +395,188 @@
     </div>
  </section>
 <!-- end testimonials -->
+
+<!-- team  -->
+ <section class="team section">
+    <div class="container mx-auto">
+        <!-- title -->
+        <h2 class="team__title h2 mb-[50px] text-center xl:text-left">
+            Our team
+        </h2> 
+        
+        <!-- slider -->
+        <div class="team__slider swiper min-h-[400px]">
+            <!-- additional required wrapper -->
+            <div class="swiper-wrapper mb-16">
+                <!-- slide 1 -->
+                <div class="swiper-slide">
+                    <div class="flex flex-col md:flex-row gap-9">
+                        <!-- item 1 -->
+                        <div class="flex-1 flex flex-col xl:flex-row">
+                            <div class="flex flex-col xl:flex-row items-center gap-[30px]">
+                                <!-- img -->
+                                <div class="flex-1">
+                                    <img src="/dist/assets/img/team/doctor-1.png">
+                                </div>
+                                <!-- info -->
+                                <div class="flex-1 flex flex-col">
+                                    <!-- name -->
+                                    <h4 class="h4 mb-[10px]">Dr. Leslie Taylor</h4>
+                                    <!-- job -->
+                                    <div class="font-medium uppercase tracking-[2.24px] text-[#9ab4b7] mb-[20px]">Pediatrician</div> 
+                                    <!-- description -->
+                                    <div class="font-light mb-[26px] max-w-[320px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, non dignissimos. Dolor!
+                                    </div> 
+                                    <!-- social -->
+                                    <div class="flex items-center text-[30px] gap-x-5 text-accent-tertiary">
+                                        <a href="" #="" 
+                                            class="cursor-pointer hover:text-accent transition-all">
+                                            <i class="ri-youtube-fill"></i>
+                                        </a>
+                                        <a href="" #="" 
+                                            class="cursor-pointer hover:text-accent transition-all">
+                                            <i class="ri-facebook-circle-fill"></i>
+                                        </a>
+                                        <a href="" #="" 
+                                            class="cursor-pointer hover:text-accent transition-all">
+                                            <i class="ri-instagram-fill"></i>
+                                        </a>
+                                        <a href="" #="" 
+                                            class="cursor-pointer hover:text-accent transition-all">
+                                            <i class="ri-pinterest-fill"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 2 -->
+                        <div class="flex-1 flex flex-col xl:flex-row">
+                            <div class="flex flex-col xl:flex-row items-center gap-[30px]">
+                                <!-- img -->
+                                <div class="flex-1">
+                                    <img src="/dist/assets/img/team/doctor-2.png">
+                                </div>
+                                <!-- info -->
+                                <div class="flex-1 flex flex-col">
+                                    <!-- name -->
+                                    <h4 class="h4 mb-[10px]">Dr. Zachary Brown</h4>
+                                    <!-- job -->
+                                    <div class="font-medium uppercase tracking-[2.24px] text-[#9ab4b7] mb-[20px]">Cardiologist</div> 
+                                    <!-- description -->
+                                    <div class="font-light mb-[26px] max-w-[320px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, non dignissimos. Dolor!
+                                    </div> 
+                                    <!-- social -->
+                                    <div class="flex items-center text-[30px] gap-x-5 text-accent-tertiary">
+                                        <a href="" #="" 
+                                            class="cursor-pointer hover:text-accent transition-all">
+                                            <i class="ri-youtube-fill"></i>
+                                        </a>
+                                        <a href="" #="" 
+                                            class="cursor-pointer hover:text-accent transition-all">
+                                            <i class="ri-facebook-circle-fill"></i>
+                                        </a>
+                                        <a href="" #="" 
+                                            class="cursor-pointer hover:text-accent transition-all">
+                                            <i class="ri-instagram-fill"></i>
+                                        </a>
+                                        <a href="" #="" 
+                                            class="cursor-pointer hover:text-accent transition-all">
+                                            <i class="ri-pinterest-fill"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide 2 -->
+                <div class="swiper-slide">
+                    <div class="flex flex-col md:flex-row gap-9">
+                        <!-- item 1 -->
+                        <div class="flex-1 flex flex-col xl:flex-row">
+                            <div class="flex flex-col xl:flex-row items-center gap-[30px]">
+                                <!-- img -->
+                                <div class="flex-1">
+                                    <img src="/dist/assets/img/team/doctor-1.png">
+                                </div>
+                                <!-- info -->
+                                <div class="flex-1 flex flex-col">
+                                    <!-- name -->
+                                    <h4 class="h4 mb-[10px]">Dr. Leslie Taylor</h4>
+                                    <!-- job -->
+                                    <div class="font-medium uppercase tracking-[2.24px] text-[#9ab4b7] mb-[20px]">Pediatrician</div> 
+                                    <!-- description -->
+                                    <div class="font-light mb-[26px] max-w-[320px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, non dignissimos. Dolor!
+                                    </div> 
+                                    <!-- social -->
+                                    <div class="flex items-center text-[30px] gap-x-5 text-accent-tertiary">
+                                        <a href="" #="" 
+                                            class="cursor-pointer hover:text-accent transition-all">
+                                            <i class="ri-youtube-fill"></i>
+                                        </a>
+                                        <a href="" #="" 
+                                            class="cursor-pointer hover:text-accent transition-all">
+                                            <i class="ri-facebook-circle-fill"></i>
+                                        </a>
+                                        <a href="" #="" 
+                                            class="cursor-pointer hover:text-accent transition-all">
+                                            <i class="ri-instagram-fill"></i>
+                                        </a>
+                                        <a href="" #="" 
+                                            class="cursor-pointer hover:text-accent transition-all">
+                                            <i class="ri-pinterest-fill"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 2 -->
+                        <div class="flex-1 flex flex-col xl:flex-row">
+                            <div class="flex flex-col xl:flex-row items-center gap-[30px]">
+                                <!-- img -->
+                                <div class="flex-1">
+                                    <img src="/dist/assets/img/team/doctor-2.png">
+                                </div>
+                                <!-- info -->
+                                <div class="flex-1 flex flex-col">
+                                    <!-- name -->
+                                    <h4 class="h4 mb-[10px]">Dr. Zachary Brown</h4>
+                                    <!-- job -->
+                                    <div class="font-medium uppercase tracking-[2.24px] text-[#9ab4b7] mb-[20px]">Cardiologist</div> 
+                                    <!-- description -->
+                                    <div class="font-light mb-[26px] max-w-[320px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, non dignissimos. Dolor!
+                                    </div> 
+                                    <!-- social -->
+                                    <div class="flex items-center text-[30px] gap-x-5 text-accent-tertiary">
+                                        <a href="" #="" 
+                                            class="cursor-pointer hover:text-accent transition-all">
+                                            <i class="ri-youtube-fill"></i>
+                                        </a>
+                                        <a href="" #="" 
+                                            class="cursor-pointer hover:text-accent transition-all">
+                                            <i class="ri-facebook-circle-fill"></i>
+                                        </a>
+                                        <a href="" #="" 
+                                            class="cursor-pointer hover:text-accent transition-all">
+                                            <i class="ri-instagram-fill"></i>
+                                        </a>
+                                        <a href="" #="" 
+                                            class="cursor-pointer hover:text-accent transition-all">
+                                            <i class="ri-pinterest-fill"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- swiper pagination -->
+            <div class="swiper-pagination"></div> 
+        </div>
+    </div>
+ </section>
+<!-- end team  -->
 
 <!-- temp div  -->
  <div class="h-[4000px]"></div>    

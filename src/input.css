@@ -43,7 +43,9 @@
     .bgi-testimonials { @apply bg-[url(/dist/assets/img/testimonials/bg.svg)]; }
     .bgi-departments { @apply bg-[url(/dist/assets/img/departments/bg.svg)]; }
     .bgi-quoteLeft { @apply bg-[url(/dist/assets/icons/testimonials/quote-left.svg)] bg-no-repeat; }
-    .bgi-quoteRight { @apply bg-[url(/dist/assets/icons/testimonials/quote-rigth.svg)] bg-no-repeat;}
+    .bgi-quoteRight { @apply bg-[url(/dist/assets/icons/testimonials/quote-right.svg)] bg-no-repeat;}
+
+   
 
     .h1{@apply text-[36px] xl:text-[64px] font-semibold;}
     .h2{@apply text-[25px] md:text-[30px] xl:text-[38px] font-semibold;}
