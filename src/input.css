@@ -62,7 +62,9 @@
     }
 
     /* faq */
-    .faq__item.open.faq__answer{ @apply h-full; }
+    .faq__item.open .faq__answer{ 
+        @apply h-full; 
+    }
 
 
 
