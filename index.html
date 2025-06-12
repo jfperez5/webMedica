@@ -13,8 +13,8 @@
     <header class="py-8 lg:pt-6 lg:pb-14">
         <div class="container mx-auto lg:relative flex flex-col lg:flex-row lg:justify-between gap-y-4 lg:gap-y-0">
             <!-- logo -->
-             <div class="flex justify-center lg:justify-normal">
-                <a href="#">
+             <div class="flex justify-center lg:justify-between w-full">
+                <div>
                     <img src="/dist/assets/img/header/logo.svg" alt="logo centro Medico">
                 </a>
              </div>
@@ -430,7 +430,7 @@
                                     <!-- social -->
                                     <div class="flex items-center text-[30px] gap-x-5 text-accent-tertiary">
                                         <a href="" #="" 
-                                            class="cursor-pointer hover:text-accent transition-all">
+                                            class="p-[10px] rounded-[10px] shadow-custom2 text-accent-tertiary hover:text-accent transition-all cursor-pointer">
                                             <i class="ri-youtube-fill"></i>
                                         </a>
                                         <a href="" #="" 
@@ -775,9 +775,117 @@
 <!-- end blog -->
 
 <!-- brands -->
-<!-- end brands --> 
+    <section class="brands section">
+        <div class="container mx-auto">
+            <div class="flex flex-col xl:flex-row justify-between items-center gap-y-12 xl:gap-y-0">
+                <img src="/dist/assets/img/brands/brand-1.svg" alt="" class="brands__logo">
+                <img src="/dist/assets/img/brands/brand-2.svg" alt="" class="brands__logo">
+                <img src="/dist/assets/img/brands/brand-3.svg" alt="" class="brands__logo">
+                <img src="/dist/assets/img/brands/brand-4.svg" alt="" class="brands__logo">
+                <img src="/dist/assets/img/brands/brand-5.svg" alt="" class="brands__logo">
+            </div>
+        </div>
+    </section>   
+<!-- end brands -->
+ 
+<!-- newsletter -->
+ <section class="newsletter bg-accent md:h-[444px] py-12 flex items-center relative overflow-hidden">
+    <!-- pattern -->
+    <div class="absolute left-0 bottom-0"> 
+        <img src="/dist/assets/img/newsletter/pattern.svg" alt="">
+    </div>
+    <!-- container -->
+    <div class="newsletter__container container mx-auto">
+        <!-- wrapper -->
+         <div class="flex flex-col lg:flex-row lg:items-center lg:gap-x-8">
+            <!-- text -->
+            <div class="flex-1 z-10 text-center md:text-left">
+                <div class="text-base uppercase text-white tracking-[2.24px] font-medium">Our newsletter</div>
+                <h1 class="h1 mb-4 text-white">Subscribe to get more updates</h1>
+            </div>
+            <!-- form -->
+            <form class="flex-1">
+                <div class="flex flex-col md:flex-row relative gap-y-4">
+                    <input type="text" 
+                           placeholder="Your email addres" 
+                           class="rounded-full w-full h-[66px] bg-transparent border-2 border-white outline-none pl-[30px] placeholder:text-white focus:text-white focus:border-3 focus:shadow-2xl focus:shadow-cyan-600"
+                    >
+                    <button class="btn btn-lg btn-white md:absolute right-0 h-[66px]">Subscribe</button>
+                </div>
+            </form>
+        </div>
+    </div>
+ </section>
+<!-- end newsletter --> 
+
+<!-- footer -->
+    <footer class="footer pt-12 xl:pt-[150px]">
+        <div class="container mx-auto pb-12 xl:pb-[100px]">
+            <div class="flex flex-col xl:flex-row gap-x-5 gap-y-10">
+                <!-- footer contact section-->
+                <div class="item__footer flex-1"> 
+                    <!--logo  -->
+                    <a href="#">
+                        <img src="/dist/assets/img/header/logo.svg" 
+                                alt="logo insove"
+                                class="mb-[30px]"
+                        >
+                    </a>
+                    <!-- description -->
+                    <p class="mb-[20px]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, eum </p>
+                    <!-- location, email & phone -->
+                    <div class=" flex flex-col gap-y-3 mb-10">
+                        <div class="flex items-center gap-x-[6px]">
+                            <i class="ri-map-pin-fill text-[24px] text-accent"></i>
+                            <div>123 Arting Miala NY</div>
+                        </div>
+                        <div class="flex items-center gap-x-[6px]">
+                            <i class="ri-mail-fill text-[24px] text-accent"></i>
+                            <div>insove@gmail.com</div>
+                        </div>
+                        <div class="flex items-center gap-x-[6px]">
+                            <i class="ri-phone-fill text-[24px] text-accent"></i>
+                            <div>(+123) 456 78910 </div>
+                        </div>
+                    </div>
+                    <!-- socials -->
+                    <div class="social flex gap-[14px] text-[40px]">
+                        <div 
+                            class="p-[10px] rounded-[10px] shadow-custom2 text-accent-tertiary hover:text-accent transition-all cursor-pointer">
+                            <i class="ri-facebook-circle-fill"></i>
+                        </div>
+                        <div 
+                            class="p-[10px] rounded-[10px] shadow-custom2 text-accent-tertiary hover:text-accent transition-all cursor-pointer">
+                            <i class="ri-instagram-line"></i>
+                        </div>
+                        <div 
+                            class="p-[10px] rounded-[10px] shadow-custom2 text-accent-tertiary hover:text-accent transition-all cursor-pointer">
+                            <i class="ri-twitter-fill"></i>
+                        </div>
+                        <div 
+                            class="p-[10px] rounded-[10px] shadow-custom2 text-accent-tertiary hover:text-accent transition-all cursor-pointer">
+                            <i class="ri-youtube-fill"></i>
+                        </div>
+                    </div>
+                       
+                </div>
+                <!-- footer quick link section-->
+                <div class="item__footer flex-1">
+                      quick  
+                </div>
+                <!-- footer opening hours section -->
+                <div class="item__footer flex-1">
+                    opening hours
+                </div>
+            </div>
+            <div class="">copyright</div>
+        </div>
+    </footer>
+
+<!-- end footer 2:49:49-->
+
 <!-- temp div  -->
- <div class="h-[4000px]"></div>    
+ <div class="h-[2500px]"></div>    
 
 
 
